@@ -87,11 +87,11 @@
 		6BC295082A41E860002A16C6 /* Sweet Desserts SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6BC295092A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift */,
+				6BC295172A41EA3C002A16C6 /* Views */,
+				6BC2952F2A41EC69002A16C6 /* ViewModels */,
 				6BC2953F2A41ED53002A16C6 /* Models */,
 				6BC295342A41ECDF002A16C6 /* Utilities */,
-				6BC2952F2A41EC69002A16C6 /* ViewModels */,
-				6BC295172A41EA3C002A16C6 /* Views */,
-				6BC295092A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift */,
 				6BC2950D2A41E861002A16C6 /* Assets.xcassets */,
 				6BC2950F2A41E861002A16C6 /* Preview Content */,
 			);
