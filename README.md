@@ -1,11 +1,7 @@
-<style>
-img {
-  border-radius: 15%;
-}
-</style>
+<html>
 <p align="center">
 <br/>
-<img width=200px height=200px src="/Users/carvalho/GitHub/Sweet Desserts SwiftUI/Sweet Desserts SwiftUI/Assets.xcassets/AppIcon.appiconset/DessertsAppIcon.png"></a>
+<img width=200px height=200px src="https://raw.githubusercontent.com/CodingLime/Sweet-Desserts-SwiftUI/main/Sweet%20Desserts%20SwiftUI/Assets.xcassets/AppIcon.appiconset/DessertsAppIcon.png"></a>
 
 <h2 align="center">Sweet Desserts iOS App</h2>
 <br/>
@@ -13,6 +9,7 @@ img {
     This is a simple iOS app (for now) that I built with SwiftUI that allows you to explore a list of delicious desserts, log in, and save your favorite desserts. The app serves as a playground for me to play around, learn and experiment with SwiftUI concepts and implementing various features.
 </p>
 </p>
+</html>
 
 ---
 
