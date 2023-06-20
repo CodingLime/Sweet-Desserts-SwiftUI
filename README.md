@@ -11,8 +11,6 @@
 </p>
 </html>
 
----
-
 ## Features
 
 - **Dessert List**: Browse through a collection of desserts. Each dessert is displayed with its name, description, price and an appetizing image (more info to add in the future).
