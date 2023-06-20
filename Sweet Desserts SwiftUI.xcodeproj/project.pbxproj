@@ -8,17 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		6BC2950A2A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295092A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift */; };
-		6BC2950C2A41E860002A16C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2950B2A41E860002A16C6 /* ContentView.swift */; };
 		6BC2950E2A41E861002A16C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC2950D2A41E861002A16C6 /* Assets.xcassets */; };
 		6BC295112A41E861002A16C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC295102A41E861002A16C6 /* Preview Assets.xcassets */; };
+		6BC295192A41EAD1002A16C6 /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295182A41EAD1002A16C6 /* AppMainView.swift */; };
+		6BC2951B2A41EAE0002A16C6 /* DessertDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2951A2A41EAE0002A16C6 /* DessertDetailsView.swift */; };
+		6BC2951E2A41EAF5002A16C6 /* DessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2951D2A41EAF5002A16C6 /* DessertListView.swift */; };
+		6BC295202A41EB3C002A16C6 /* DessertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2951F2A41EB3C002A16C6 /* DessertCell.swift */; };
+		6BC295222A41EB54002A16C6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295212A41EB54002A16C6 /* LoadingView.swift */; };
+		6BC295252A41EB85002A16C6 /* LoginUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295242A41EB85002A16C6 /* LoginUserView.swift */; };
+		6BC295272A41EB94002A16C6 /* RegisterUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295262A41EB94002A16C6 /* RegisterUserView.swift */; };
+		6BC295292A41EBA3002A16C6 /* ProfileUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295282A41EBA3002A16C6 /* ProfileUserView.swift */; };
+		6BC2952B2A41EBB2002A16C6 /* SignInAndUpUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2952A2A41EBB2002A16C6 /* SignInAndUpUserView.swift */; };
+		6BC2952E2A41EC0A002A16C6 /* FavoriteDessertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2952D2A41EC0A002A16C6 /* FavoriteDessertsView.swift */; };
+		6BC295312A41EC78002A16C6 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295302A41EC78002A16C6 /* DessertListViewModel.swift */; };
+		6BC295332A41EC9F002A16C6 /* UserManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295322A41EC9F002A16C6 /* UserManagerViewModel.swift */; };
+		6BC295362A41ECEC002A16C6 /* DessertRemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295352A41ECEC002A16C6 /* DessertRemoteImageView.swift */; };
+		6BC295382A41ECFA002A16C6 /* AlertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295372A41ECFA002A16C6 /* AlertItems.swift */; };
+		6BC2953A2A41ED1B002A16C6 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295392A41ED1B002A16C6 /* APError.swift */; };
+		6BC2953C2A41ED2B002A16C6 /* NetworkManagerInUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2953B2A41ED2B002A16C6 /* NetworkManagerInUIKit.swift */; };
+		6BC2953E2A41ED3A002A16C6 /* NetworkManagerInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2953D2A41ED3A002A16C6 /* NetworkManagerInSwiftUI.swift */; };
+		6BC295412A41ED5E002A16C6 /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295402A41ED5E002A16C6 /* Dessert.swift */; };
+		6BC295432A41ED72002A16C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC295422A41ED72002A16C6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BC295062A41E860002A16C6 /* Sweet Desserts SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweet Desserts SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC295092A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet_Desserts_SwiftUIApp.swift; sourceTree = "<group>"; };
-		6BC2950B2A41E860002A16C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BC2950D2A41E861002A16C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC295102A41E861002A16C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6BC295182A41EAD1002A16C6 /* AppMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
+		6BC2951A2A41EAE0002A16C6 /* DessertDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailsView.swift; sourceTree = "<group>"; };
+		6BC2951D2A41EAF5002A16C6 /* DessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListView.swift; sourceTree = "<group>"; };
+		6BC2951F2A41EB3C002A16C6 /* DessertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCell.swift; sourceTree = "<group>"; };
+		6BC295212A41EB54002A16C6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		6BC295242A41EB85002A16C6 /* LoginUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserView.swift; sourceTree = "<group>"; };
+		6BC295262A41EB94002A16C6 /* RegisterUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserView.swift; sourceTree = "<group>"; };
+		6BC295282A41EBA3002A16C6 /* ProfileUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserView.swift; sourceTree = "<group>"; };
+		6BC2952A2A41EBB2002A16C6 /* SignInAndUpUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAndUpUserView.swift; sourceTree = "<group>"; };
+		6BC2952D2A41EC0A002A16C6 /* FavoriteDessertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDessertsView.swift; sourceTree = "<group>"; };
+		6BC295302A41EC78002A16C6 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
+		6BC295322A41EC9F002A16C6 /* UserManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerViewModel.swift; sourceTree = "<group>"; };
+		6BC295352A41ECEC002A16C6 /* DessertRemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertRemoteImageView.swift; sourceTree = "<group>"; };
+		6BC295372A41ECFA002A16C6 /* AlertItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItems.swift; sourceTree = "<group>"; };
+		6BC295392A41ED1B002A16C6 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		6BC2953B2A41ED2B002A16C6 /* NetworkManagerInUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerInUIKit.swift; sourceTree = "<group>"; };
+		6BC2953D2A41ED3A002A16C6 /* NetworkManagerInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerInSwiftUI.swift; sourceTree = "<group>"; };
+		6BC295402A41ED5E002A16C6 /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		6BC295422A41ED72002A16C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +87,11 @@
 		6BC295082A41E860002A16C6 /* Sweet Desserts SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6BC2953F2A41ED53002A16C6 /* Models */,
+				6BC295342A41ECDF002A16C6 /* Utilities */,
+				6BC2952F2A41EC69002A16C6 /* ViewModels */,
+				6BC295172A41EA3C002A16C6 /* Views */,
 				6BC295092A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift */,
-				6BC2950B2A41E860002A16C6 /* ContentView.swift */,
 				6BC2950D2A41E861002A16C6 /* Assets.xcassets */,
 				6BC2950F2A41E861002A16C6 /* Preview Content */,
 			);
@@ -65,6 +104,77 @@
 				6BC295102A41E861002A16C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BC295172A41EA3C002A16C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BC2952C2A41EBFB002A16C6 /* FavoritesTab */,
+				6BC295232A41EB75002A16C6 /* ProfileTab */,
+				6BC2951C2A41EAE7002A16C6 /* HomeTab */,
+				6BC295182A41EAD1002A16C6 /* AppMainView.swift */,
+				6BC2951A2A41EAE0002A16C6 /* DessertDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BC2951C2A41EAE7002A16C6 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				6BC2951D2A41EAF5002A16C6 /* DessertListView.swift */,
+				6BC2951F2A41EB3C002A16C6 /* DessertCell.swift */,
+				6BC295212A41EB54002A16C6 /* LoadingView.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		6BC295232A41EB75002A16C6 /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+				6BC295242A41EB85002A16C6 /* LoginUserView.swift */,
+				6BC295262A41EB94002A16C6 /* RegisterUserView.swift */,
+				6BC295282A41EBA3002A16C6 /* ProfileUserView.swift */,
+				6BC2952A2A41EBB2002A16C6 /* SignInAndUpUserView.swift */,
+			);
+			path = ProfileTab;
+			sourceTree = "<group>";
+		};
+		6BC2952C2A41EBFB002A16C6 /* FavoritesTab */ = {
+			isa = PBXGroup;
+			children = (
+				6BC2952D2A41EC0A002A16C6 /* FavoriteDessertsView.swift */,
+			);
+			path = FavoritesTab;
+			sourceTree = "<group>";
+		};
+		6BC2952F2A41EC69002A16C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6BC295302A41EC78002A16C6 /* DessertListViewModel.swift */,
+				6BC295322A41EC9F002A16C6 /* UserManagerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6BC295342A41ECDF002A16C6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6BC295352A41ECEC002A16C6 /* DessertRemoteImageView.swift */,
+				6BC295372A41ECFA002A16C6 /* AlertItems.swift */,
+				6BC295392A41ED1B002A16C6 /* APError.swift */,
+				6BC2953B2A41ED2B002A16C6 /* NetworkManagerInUIKit.swift */,
+				6BC2953D2A41ED3A002A16C6 /* NetworkManagerInSwiftUI.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6BC2953F2A41ED53002A16C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BC295402A41ED5E002A16C6 /* Dessert.swift */,
+				6BC295422A41ED72002A16C6 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +247,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC2950C2A41E860002A16C6 /* ContentView.swift in Sources */,
+				6BC2952B2A41EBB2002A16C6 /* SignInAndUpUserView.swift in Sources */,
+				6BC2953E2A41ED3A002A16C6 /* NetworkManagerInSwiftUI.swift in Sources */,
+				6BC295272A41EB94002A16C6 /* RegisterUserView.swift in Sources */,
+				6BC2951B2A41EAE0002A16C6 /* DessertDetailsView.swift in Sources */,
+				6BC2953A2A41ED1B002A16C6 /* APError.swift in Sources */,
+				6BC2952E2A41EC0A002A16C6 /* FavoriteDessertsView.swift in Sources */,
+				6BC2951E2A41EAF5002A16C6 /* DessertListView.swift in Sources */,
+				6BC295332A41EC9F002A16C6 /* UserManagerViewModel.swift in Sources */,
+				6BC295432A41ED72002A16C6 /* User.swift in Sources */,
 				6BC2950A2A41E860002A16C6 /* Sweet_Desserts_SwiftUIApp.swift in Sources */,
+				6BC295202A41EB3C002A16C6 /* DessertCell.swift in Sources */,
+				6BC295312A41EC78002A16C6 /* DessertListViewModel.swift in Sources */,
+				6BC295252A41EB85002A16C6 /* LoginUserView.swift in Sources */,
+				6BC295412A41ED5E002A16C6 /* Dessert.swift in Sources */,
+				6BC295292A41EBA3002A16C6 /* ProfileUserView.swift in Sources */,
+				6BC295362A41ECEC002A16C6 /* DessertRemoteImageView.swift in Sources */,
+				6BC2953C2A41ED2B002A16C6 /* NetworkManagerInUIKit.swift in Sources */,
+				6BC295192A41EAD1002A16C6 /* AppMainView.swift in Sources */,
+				6BC295222A41EB54002A16C6 /* LoadingView.swift in Sources */,
+				6BC295382A41ECFA002A16C6 /* AlertItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +397,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sweet Desserts SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sweet Desserts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +426,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sweet Desserts SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sweet Desserts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
