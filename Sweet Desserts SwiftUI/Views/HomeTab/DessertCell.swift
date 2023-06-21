@@ -5,7 +5,9 @@ struct DessertCell: View {
     let dessert: Dessert
     
     var body: some View {
-        NavigationLink(destination: DessertDetailsView(dessert: dessert)){
+        NavigationLink(destination: DessertDetailsView(dessert: dessert)
+            .navigationBarBackButtonHidden()
+        ){
             HStack {
                 DessertRemoteImage(urlString: NetworkManager.baseURL + dessert.imageURL)
                     .aspectRatio(contentMode: .fit)

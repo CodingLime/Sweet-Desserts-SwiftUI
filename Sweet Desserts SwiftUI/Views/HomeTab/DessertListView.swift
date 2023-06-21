@@ -53,5 +53,6 @@ struct DessertListView: View {
 struct DessertListView_Previews: PreviewProvider {
     static var previews: some View {
         DessertListView()
+            .environmentObject(DessertListViewModel())
     }
 }
