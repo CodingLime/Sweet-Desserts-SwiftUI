@@ -4,14 +4,12 @@ struct DessertDetailsView: View {
     let dessert: Dessert
     
     @EnvironmentObject private var viewModel: DessertListViewModel
-    @EnvironmentObject private var userManager: UserManagerViewModel
-    
-    @State var showModalLogin: Bool = false
+    //@EnvironmentObject private var userManager: UserManagerViewModel
     
     var body: some View {
         ZStack(alignment: .top) {
             
-            Header(urlString: dessert.imageURL)
+            Header(urlString: dessert.imageURL, dessert: dessert)
             
             GeometryReader { proxy in
                 ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false){
@@ -84,13 +82,15 @@ struct SubInfoView: View {
 
 struct Header: View {
     var urlString: String
+    let dessert: Dessert
+    @EnvironmentObject private var viewModel: DessertListViewModel
     
+    @EnvironmentObject private var userManager: UserManagerViewModel
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var currentUser: User? = nil
     
-    // TO DO: CREATE CUSTOM COLOR FOR TOOLBARITEMS FOR DARK & LIGHT MODE
-    // TO DO: CREATE CUSTOM COLOR FOR TOOLBARITEMS FOR DARK & LIGHT MODE
-    // TO DO: CREATE CUSTOM COLOR FOR TOOLBARITEMS FOR DARK & LIGHT MODE
-    // TO DO: CREATE CUSTOM COLOR FOR TOOLBARITEMS FOR DARK & LIGHT MODE
+    @State var showModalLogin: Bool = false
+    @State private var showAlert = false
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -98,11 +98,18 @@ struct Header: View {
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 4 * 2)
         }
+        .onReceive(userManager.$currentUser) { user in
+            /**
+             We use .onReceive here to keep an check on userManager.$currentUser
+             to see if it changes, and if yes, update the @State currentUser,
+             and this way allow to change the views we show
+             */
+            currentUser = user
+        }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){
                 Button(action: { presentationMode.wrappedValue.dismiss() }){
                     Image(systemName: "chevron.backward")
-                    //.font(.title3)
                         .foregroundColor(Color("ColorTextMain"))
                         .frame(width: 45, height: 45)
                         .background(Color("ColorBackground"))
@@ -113,18 +120,41 @@ struct Header: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing){
-                Button(action: {}){
-                    Image(systemName: "heart")
-                    //.font(.title3)
-                        .foregroundColor(Color("ColorTextMain"))
+                Button(action: {
+                    if currentUser == nil {
+                        //self.showModalLogin = true
+                        self.showAlert = true
+                    } else {
+                        
+                        if((viewModel.favoriteDesserts.contains { $0.id == dessert.id })){
+                            viewModel.removeFromFavorites(dessert)
+                        } else {
+                            viewModel.addToFavorites(dessert)
+                        }
+                        
+                    }
+                }){ // heart.fill
+                    Image(systemName: ((viewModel.favoriteDesserts.contains { $0.id == dessert.id })) ?
+                          "heart.fill" : "heart")
+                        .foregroundColor(
+                            ((viewModel.favoriteDesserts.contains { $0.id == dessert.id })) ?
+                            Color.red : Color("ColorTextMain"))
                         .frame(width: 45, height: 45)
                         .background(Color("ColorBackground"))
                         .cornerRadius(10)
+                }
+                .sheet(isPresented: $showModalLogin) {
+                    LoginUserView(isModal: showModalLogin)
+                }
+                .alert("You need to login first", isPresented: $showAlert) {
+                    Button("Login") { self.showModalLogin = true }
+                    Button("Cancel", role: .cancel) { }
                 }
             }
         }
         
     }
+    
 }
 
 // MARK: - Extend view to apply cornerRadius

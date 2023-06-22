@@ -13,7 +13,7 @@ struct ProfileUserView: View {
                 .padding()
             Button("Logoff") {
                 userManager.logoff()
-                viewModel.clearDessertsForLogoff()
+                viewModel.clearFavoriteDessertsForLogoff()
             }
             .padding()
         }

@@ -34,14 +34,14 @@ struct DessertDetailsViewBACKUP: View {
             
             if ((userManager.currentUser?.email) != nil){
                 Button(action: {
-                    if(viewModel.favoriteDesserts.contains { $0.id == dessert.id }){
+                    if((viewModel.favoriteDesserts.contains { $0.id == dessert.id })){
                         viewModel.removeFromFavorites(dessert)
                     } else {
                         viewModel.addToFavorites(dessert)
                     }
                 }) {
                     
-                    if(viewModel.favoriteDesserts.contains { $0.id == dessert.id }){
+                    if((viewModel.favoriteDesserts.contains { $0.id == dessert.id })){
                         Text("Remove from favorites")
                             .foregroundColor(.red)
                             .frame(width: 200, height: 50)

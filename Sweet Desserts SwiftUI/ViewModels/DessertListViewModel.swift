@@ -3,9 +3,19 @@ import Foundation
 final class DessertListViewModel: ObservableObject {
     
     @Published var desserts: [Dessert] = []
-    @Published var favoriteDesserts: [Dessert] = []
+    //@Published var favoriteDesserts: [Dessert] = []
     @Published var isLoading = false
     @Published var alertItem: AlertItem?
+    
+    @Published var favoriteDesserts: [Dessert] = [] {
+        didSet {
+            saveFavoriteDesserts()
+        }
+    }
+    
+    init() {
+        loadFavoriteDesserts()
+    }
     
     func addToFavorites(_ dessert: Dessert) {
         /*
@@ -23,6 +33,25 @@ final class DessertListViewModel: ObservableObject {
     func removeFromFavorites(_ dessert: Dessert) {
         // same as above, only doing locally for simplicities sake
         favoriteDesserts.removeAll { $0.id == dessert.id }
+    }
+    
+    private func saveFavoriteDesserts() {
+        do {
+            let encoder = JSONEncoder()
+            let dessertsData = try encoder.encode(favoriteDesserts)
+            UserDefaults.standard.set(dessertsData, forKey: "FavoriteDesserts")
+        } catch {
+            print("Error encoding favorite desserts:", error)
+        }
+    }
+    
+    private func loadFavoriteDesserts() {
+        if let dessertsData = UserDefaults.standard.data(forKey: "FavoriteDesserts") {
+            let decoder = JSONDecoder()
+            if let desserts = try? decoder.decode([Dessert].self, from: dessertsData) {
+                favoriteDesserts = desserts
+            }
+        }
     }
     
     func getDesserts() {
@@ -55,9 +84,9 @@ final class DessertListViewModel: ObservableObject {
         }
     }
     
-    func clearDessertsForLogoff() {
-        //self.desserts = []
+    func clearFavoriteDessertsForLogoff() {
         self.favoriteDesserts = []
+        UserDefaults.standard.removeObject(forKey: "FavoriteDesserts")
     }
     
 }

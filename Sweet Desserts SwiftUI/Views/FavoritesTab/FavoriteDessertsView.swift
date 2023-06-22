@@ -13,9 +13,9 @@ struct FavoriteDessertsView: View {
     //@Binding var selectedTab: Int
     
     var filteredDesserts: [Dessert] {
-        guard !searchTerm.isEmpty else { return viewModel.favoriteDesserts }
+        guard !searchTerm.isEmpty else { return viewModel.favoriteDesserts  }
         // forEach name -> $0
-        return viewModel.favoriteDesserts.filter { $0.name.localizedCaseInsensitiveContains(searchTerm)}
+        return viewModel.favoriteDesserts.filter { $0.name.localizedCaseInsensitiveContains(searchTerm)} 
     }
     
     var body: some View {
