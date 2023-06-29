@@ -66,6 +66,22 @@ struct DessertDetailsView: View {
     }
 }
 
+/**
+ This allows to have the statusBarHidden and still have the back swipe to return
+ to the previous screen to function
+ source: https://stackoverflow.com/questions/59921239/hide-navigation-bar-without-losing-swipe-back-gesture-in-swiftui
+ */
+extension UINavigationController: UIGestureRecognizerDelegate {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = self
+    }
+
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
+    }
+}
+
 struct SubInfoView: View {
     var image: String
     var info: String
